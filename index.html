@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href = "font/roboto/stylesheet.css" rel = "stylesheet" type = "text/css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Avtobus1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu_block">
+            <div class="menu_book">
+                <div class="menu_item"><img src="./img/contact-book.png" alt=""></div>
+                <div class="menu_contact">Книга контактов</div>
+            </div>
+            <div class="menu_btn">
+                <button type="button" class="btn btn-danger">Добавить контакт    +</button>
+                <button type="button" class="btn btn-primary">Группы</button>
+            </div>
+        </div>
+    </div>
+        <div class="contacts">
+            <div class="contacts_list-empty">Список контактов пуст</div>
+        </div>
+        <div class="main">
+            <div class="group">
+                <div class="group_item">
+                <div class="group_name">
+                    <h2 class="name">Группа</h2>
+                    <img src="./img/Vector.png" alt="Vector" width="13px" height="8px" class="img-rotate">
+                </div>
+                <div class="group_line"></div>
+                
+                <div class="group_person">
+                    <div class="person_block">
+                        <div id="view" class="person_name">Фамилия Имя Отчество</div>
+                        <div class="person_fone">
+                            <span id="view2">+7-xxx-xxx</span>
+                            <div class="red">
+                                <svg id="red" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class = "svg-ed">
+                                <rect opacity="0.1" x="0.5" y="0.5" width="37" height="37" rx="5.5" stroke="black"/>
+                                <g clip-path="url(#clip0_1894_95)">
+                                <path opacity="0.3" d="M10 24.2501V28.0001H13.75L24.81 16.9401L21.06 13.1901L10 24.2501ZM27.71 14.0401C28.1 13.6501 28.1 13.0201 27.71 12.6301L25.37 10.2901C24.98 9.90006 24.35 9.90006 23.96 10.2901L22.13 12.1201L25.88 15.8701L27.71 14.0401V14.0401Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1894_95">
+                                <rect width="24" height="24" fill="white" transform="translate(7 7)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </div>
+                            <div class="delete">
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class = "svg-del">
+                                    <rect opacity="0.1" x="0.5" y="0.5" width="37" height="37" rx="5.5" stroke="black"/>
+                                    <g clip-path="url(#clip0_1894_94)">
+                                    <path opacity="0.3" d="M12.6666 26.3889C12.6666 27.55 13.6166 28.5 14.7778 28.5H23.2222C24.3833 28.5 25.3333 27.55 25.3333 26.3889V13.7222H12.6666V26.3889ZM15.2633 18.8733L16.7516 17.385L19 19.6228L21.2378 17.385L22.7261 18.8733L20.4883 21.1111L22.7261 23.3489L21.2378 24.8372L19 22.5994L16.7622 24.8372L15.2739 23.3489L17.5116 21.1111L15.2633 18.8733ZM22.6944 10.5556L21.6389 9.5H16.3611L15.3055 10.5556H11.6111V12.6667H26.3889V10.5556H22.6944Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1894_94">
+                                    <rect width="25.3333" height="25.3333" fill="white" transform="translate(6.33331 6.33337)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>     
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    <div class="form">
+        <div class="form_block">
+            <div class="form_text">Группы контактов</div>
+            <button type="button" class="btn-close" aria-label="Close"></button>
+        </div>
+        <div class="form_line"></div>
+        <div class="form_add">
+        <div class="form_input">
+            <input type="text" name="gr-1" placeholder="Введите название" class="input_text">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class = "svg-del">
+                <rect opacity="0.1" x="0.5" y="0.5" width="37" height="37" rx="5.5" stroke="black"/>
+                <g clip-path="url(#clip0_1894_194)">
+                <path opacity="0.3" d="M12.6666 26.3889C12.6666 27.55 13.6166 28.5 14.7778 28.5H23.2222C24.3833 28.5 25.3333 27.55 25.3333 26.3889V13.7222H12.6666V26.3889ZM15.2633 18.8733L16.7516 17.385L19 19.6228L21.2378 17.385L22.7261 18.8733L20.4883 21.1111L22.7261 23.3489L21.2378 24.8372L19 22.5994L16.7622 24.8372L15.2739 23.3489L17.5116 21.1111L15.2633 18.8733ZM22.6944 10.5556L21.6389 9.5H16.3611L15.3055 10.5556H11.6111V12.6667H26.3889V10.5556H22.6944Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1894_194">
+                <rect width="25.3333" height="25.3333" fill="white" transform="translate(6.33331 6.33334)"/>
+                </clipPath>
+                </defs>
+                </svg>
+        </div>
+        <div class="form_input">
+            <input type="text" name="gr-2" placeholder="Введите название" class="input_text">
+            <svg  width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class = "svg-del">
+                <rect opacity="0.1" x="0.5" y="0.5" width="37" height="37" rx="5.5" stroke="black"/>
+                <g clip-path="url(#clip0_1894_194)">
+                <path opacity="0.3" d="M12.6666 26.3889C12.6666 27.55 13.6166 28.5 14.7778 28.5H23.2222C24.3833 28.5 25.3333 27.55 25.3333 26.3889V13.7222H12.6666V26.3889ZM15.2633 18.8733L16.7516 17.385L19 19.6228L21.2378 17.385L22.7261 18.8733L20.4883 21.1111L22.7261 23.3489L21.2378 24.8372L19 22.5994L16.7622 24.8372L15.2739 23.3489L17.5116 21.1111L15.2633 18.8733ZM22.6944 10.5556L21.6389 9.5H16.3611L15.3055 10.5556H11.6111V12.6667H26.3889V10.5556H22.6944Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1894_194">
+                <rect width="25.3333" height="25.3333" fill="white" transform="translate(6.33331 6.33334)"/>
+                </clipPath>
+                </defs>
+                </svg>
+        </div>
+    </div>
+        <div class="form_btn">
+            <button type="button" class="btn_add">Добавить</button>
+            <button type="button" class="btn btn-primary" onclick="saveData()">Сохранить</button>
+        </div>
+    </div>
+
+    <div class="second-form">
+        <div class="form_block">
+            <div class="form_text">Добавление контакта</div>
+            <button type="button" class="btn-close" aria-label="Close"></button>
+        </div>
+        <div class="form_line"></div>
+        <div class="form_input input_block">
+            <input id="input_name" type="text" name="FIO" placeholder="Введите ФИО">
+            <input id="input_name-ed" type="number" name="fone" placeholder="Введите номер" class="input_number"> 
+            <input id="input_name-ed" list="<идентификатор>" name="gr-change" placeholder="Выберете группу         +" class="input_group">
+                <datalist id="<идентификатор>">
+                </datalist>
+        </div>
+        <div class="form_btn mod">
+            <button type="button" class="btn btn-primary" onclick="savePersonData()">Сохранить</button>
+        </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
